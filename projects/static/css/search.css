@@ -1,0 +1,40 @@
+section {
+    padding: 2rem 0;
+}
+
+#section-search {
+    padding: 5rem 0;
+}
+
+#section-projects {
+    max-width: 1024px;
+}
+
+.form-search {
+    display: flex;
+}
+
+.form-search input {
+    width: 100%;    
+    background: var(--clr-secondary);
+    border: none;
+}
+
+.form-search button[type="submit"] {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: var(--clr-secondary);
+}
+
+.list-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.list-item-project {
+    max-width: 300px;
+    margin: 1rem;
+}

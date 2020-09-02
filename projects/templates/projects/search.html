@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/search.css' %}" type="text/css">
+{% endblock link %}
+
+{% block title %}
+    Search
+{% endblock title %}
+
+{% block content %}
+    <div class="toggle-buttons">
+        <a href="{% url 'index' %}"><i class="fas fa-home btn-toggle"></i></a>
+        <div class="language-toggle btn-toggle">ru</div>
+    </div>
+
+    <div class="wrap">
+        <section>
+            <h1>My Projects</h1>
+        </section>
+        <section class="section-search">
+            <form class="form-search">
+                <input type="text" placeholder="Search by tag or name...">
+                <button type="submit" class="btn btn-search">search</button>
+            </form>
+        </section>
+        <section id="section-projects">
+            <ul class="list-projects">
+                <li class="list-item-project">
+                    <a href="#">
+                        <div class="box box-project">
+                            <img src="{% static 'img/dog.jpg' %}" alt="project-img" class="box-img">
+                            <div class="box-content">
+                                <ul class="list-tags">
+                                    <li class="list-item-tag">C++</li>
+                                    <li class="list-item-tag">Python</li>
+                                    <li class="list-item-tag">Django</li>
+                                </ul>
+                                <h3>Project</h3>
+                                <p>Improved own provided blessing may peculiar domestic. Sight house has sex never. No
+                                    visited raising gravity outward subject my cottage mr be. Hold do at tore in park
+                                    feet near my case.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item-project">
+                    <a href="#">
+                        <div class="box box-project">
+                            <img src="{% static 'img/dog.jpg' %}" alt="project-img" class="box-img">
+                            <div class="box-content">
+                                <ul class="list-tags">
+                                    <li class="list-item-tag">C++</li>
+                                    <li class="list-item-tag">Python</li>
+                                    <li class="list-item-tag">Django</li>
+                                </ul>
+                                <h3>Project</h3>
+                                <p>Improved own provided blessing may peculiar domestic. Sight house has sex never. No
+                                    visited raising gravity outward subject my cottage mr be. Hold do at tore in park
+                                    feet near my case.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item-project">
+                    <a href="#">
+                        <div class="box box-project">
+                            <img src="{% static 'img/dog.jpg' %}" alt="project-img" class="box-img">
+                            <div class="box-content">
+                                <ul class="list-tags">
+                                    <li class="list-item-tag">C++</li>
+                                    <li class="list-item-tag">Python</li>
+                                    <li class="list-item-tag">Django</li>
+                                </ul>
+                                <h3>Project</h3>
+                                <p>Improved own provided blessing may peculiar domestic. Sight house has sex never. No
+                                    visited raising gravity outward subject my cottage mr be. Hold do at tore in park
+                                    feet near my case.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="{% static 'js/load_theme.js' %}"></script>
+{% endblock scripts %}

@@ -1,0 +1,12 @@
+:root {
+    --clr-text-primary: rgb(220, 220, 220);
+    --clr-text-secondary: white;
+
+    --clr-tag-light: #00095C;
+    --clr-tag-dark: #000533;
+    
+    --clr-primary: #000E8A;
+    --clr-secondary: #000F75;
+
+    --clr-shadow: black;
+}

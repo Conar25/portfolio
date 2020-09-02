@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
+    <link rel="stylesheet" type="text/css" id="link-theme" data-theme="white" href="{% static 'css/theme-white.css' %}">
+    {% block link %}{% endblock link %}
+    <script src="https://kit.fontawesome.com/04646c20df.js" crossorigin="anonymous"></script>
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+
+<body>
+    {% block content %}
+    {% endblock content %}
+
+    <footer>
+        <p>Made by Ilshat G.</p>
+    </footer>
+
+    {% block scripts %}
+    {% endblock scripts %}
+</body>
+
+</html>

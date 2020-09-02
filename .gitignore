@@ -5,3 +5,4 @@ venv/
 prototypes/
 .vscode/
 */__pycache__/
+*/migrations/
