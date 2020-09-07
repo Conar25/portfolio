@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function set_theme(theme_color) {
-        theme_link.href = `static/css/theme-${theme_color}.css`;
+        theme_link.href = `/css/theme-${theme_color}.css`;
         theme_link.type = 'text/css';
         localStorage.setItem('theme', theme_color);
     }
