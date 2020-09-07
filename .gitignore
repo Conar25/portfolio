@@ -5,4 +5,4 @@ prototypes/
 .vscode/
 */__pycache__/
 */migrations/
-static/
+staticfiles/
