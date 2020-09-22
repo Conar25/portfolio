@@ -120,15 +120,16 @@
     <div class="wrap-type-2">
         <section id="section-contact">
             <h2>Get in touch</h2>
-            <form class="form-contact">
+            <form class="form-contact" method="POST" action="{% url 'contact:send_email' %}">
+                {% csrf_token %}
                 <label for="name">Name</label>
-                <input type="text" name="name">
+                <input required type="text" name="name">
                 <label for="email">Email</label>
-                <input type="text" name="email">
+                <input required type="text" name="email">
                 <label for="subject">Subject</label>
-                <input type="text" name="subject">
+                <input required type="text" name="subject">
                 <label for="message">Message</label>
-                <textarea name="message"></textarea>
+                <textarea required name="message"></textarea>
                 <button href="#" class="btn btn-submit">submit</button>
             </form>
         </section>
