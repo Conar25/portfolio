@@ -168,6 +168,7 @@ section {
     margin-bottom: 2.5em;
     font-size: 0.8rem;
     background: var(--clr-primary);
+    height: 100%;
 }
 
 .box-img {

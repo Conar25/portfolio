@@ -11,5 +11,5 @@ def index_view(request):
 def search_view(request):
     projects = ProjectModel.objects.all()
     return render(request, 'core/search.html', {
-        'projects': project,
+        'projects': projects,
         })

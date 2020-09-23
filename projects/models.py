@@ -3,12 +3,16 @@ import os
 from django.db import models
 from django.contrib.staticfiles import finders
 
+from taggit.managers import TaggableManager
+
 class ProjectModel(models.Model):
     title = models.CharField(max_length=100)
     slug = models.SlugField(max_length=100,
                             db_index=True)
     description = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
+
+    tags = TaggableManager()
 
     def get_image(self):
         valid_extensions = ['jpg', 'png', 'gif']

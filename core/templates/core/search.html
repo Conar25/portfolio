@@ -26,62 +26,7 @@
             </form>
         </section>
         <section id="section-projects">
-            <ul class="list-projects">
-                <li class="list-item-project">
-                    <a href="#">
-                        <div class="box box-project">
-                            <img src="{% static 'img/dog.jpg' %}" alt="project-img" class="box-img">
-                            <div class="box-content">
-                                <ul class="list-tags">
-                                    <li class="list-item-tag">C++</li>
-                                    <li class="list-item-tag">Python</li>
-                                    <li class="list-item-tag">Django</li>
-                                </ul>
-                                <h3>Project</h3>
-                                <p>Improved own provided blessing may peculiar domestic. Sight house has sex never. No
-                                    visited raising gravity outward subject my cottage mr be. Hold do at tore in park
-                                    feet near my case.</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="list-item-project">
-                    <a href="#">
-                        <div class="box box-project">
-                            <img src="{% static 'img/dog.jpg' %}" alt="project-img" class="box-img">
-                            <div class="box-content">
-                                <ul class="list-tags">
-                                    <li class="list-item-tag">C++</li>
-                                    <li class="list-item-tag">Python</li>
-                                    <li class="list-item-tag">Django</li>
-                                </ul>
-                                <h3>Project</h3>
-                                <p>Improved own provided blessing may peculiar domestic. Sight house has sex never. No
-                                    visited raising gravity outward subject my cottage mr be. Hold do at tore in park
-                                    feet near my case.</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="list-item-project">
-                    <a href="#">
-                        <div class="box box-project">
-                            <img src="{% static 'img/dog.jpg' %}" alt="project-img" class="box-img">
-                            <div class="box-content">
-                                <ul class="list-tags">
-                                    <li class="list-item-tag">C++</li>
-                                    <li class="list-item-tag">Python</li>
-                                    <li class="list-item-tag">Django</li>
-                                </ul>
-                                <h3>Project</h3>
-                                <p>Improved own provided blessing may peculiar domestic. Sight house has sex never. No
-                                    visited raising gravity outward subject my cottage mr be. Hold do at tore in park
-                                    feet near my case.</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            {% include 'projects/project_list.html' with projects=projects %}            
         </section>
     </div>
 {% endblock content %}

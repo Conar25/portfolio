@@ -26,6 +26,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # third-party apps
+    'taggit',
+    # my apps
     'core',
     'projects',
     'contact'
@@ -98,3 +101,6 @@ EMAIL_HOST_USER = os.environ['DJANGO_EMAIL_HOST_USER']
 EMAIL_HOST_PASSWORD = os.environ['DJANGO_EMAIL_HOST_PASSWORD']
 DEFAULT_FROM_EMAIL = 'Ilshat'
 DEFAULT_TO_EMAIL = 'galiev2512@gmail.com'
+
+# Taggit settings
+TAGGIT_CASE_INSENSITIVE = True
