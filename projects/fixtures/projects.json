@@ -1,0 +1,12 @@
+[
+{
+  "model": "projects.projectmodel",
+  "pk": 1,
+  "fields": {
+    "title": "Path Finder",
+    "slug": "path-finder",
+    "description": "Path finding visualisation using javascript",
+    "created_date": "2020-09-23T06:47:36.909Z"
+  }
+}
+]
