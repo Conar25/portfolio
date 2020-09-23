@@ -20,13 +20,17 @@
             <h1>My Projects</h1>
         </section>
         <section class="section-search">
-            <form class="form-search">
-                <input type="text" placeholder="Search by tag or name...">
+            <form class="form-search" method="get" action="{% url 'projects:search' %}">
+                <input type="text" name="query" placeholder="Search by tag or name...">
                 <button type="submit" class="btn btn-search">search</button>
             </form>
         </section>
         <section id="section-projects">
-            {% include 'projects/project_list.html' with projects=projects %}            
+            {% if projects %}
+                {% include 'projects/project_list.html' with projects=projects %}            
+            {% else %}
+                <h2>No results...</h2>
+            {% endif %}
         </section>
     </div>
 {% endblock content %}

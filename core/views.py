@@ -7,9 +7,3 @@ def index_view(request):
     return render(request, 'core/index.html', {
         'projects': projects,
         })
-
-def search_view(request):
-    projects = ProjectModel.objects.all()
-    return render(request, 'core/search.html', {
-        'projects': projects,
-        })
