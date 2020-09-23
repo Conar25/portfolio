@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+{% endblock link %}
+
+{% block title %}
+    Home
+{% endblock title %}
+
+{% block content %}
+    <div class="toggle-buttons">
+        <div class="overlay"></div>
+        <i class="fas fa-bars nav-toggle btn-toggle"></i>
+        <div class="language-toggle btn-toggle">ru</div>
+    </div>
+    <nav class="nav-hide">
+        <a href="#section-photo" class="nav-element">Home</a>
+        <a href="#section-about" class="nav-element">About Me</a>
+        <a href="#section-projects" class="nav-element">Last projects</a>
+        <a href="#section-contact" class="nav-element">Get in touch</a>
+    </nav>
+
+
+    <div class="wrap-type-1">
+        <section id="section-photo">
+            <h1>Hi, I'm Ilshat_</h1>
+            <figure class="figure-photo">
+                <img src="{% static 'img/dog.jpg' %}" alt="my image" class="photo">
+            </figure>
+            
+            <h3>Pick The theme</h3>
+            <div class="theme-controler">
+                <div data-theme="white" class="theme" id="white"></div>
+                <div data-theme="blue" class="theme" id="blue"></div>
+                <div data-theme="green" class="theme" id="green"></div>
+                <div data-theme="purple" class="theme" id="purple"></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="wrap-type-2">
+        <section id="section-about">
+            <div class="box box-about">
+                <h2>About me</h2>
+                <p>Possession her thoroughly remarkably terminated man continuing. Removed greater to do ability. You
+                    shy shall while but wrote marry. Call why sake has sing pure. Gay six set polite nature worthy.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <div class="wrap-type-1">
+        <section id="section-projects">
+            <h2>Last projects</h2>
+
+            {% include 'core/project_list.html' with projects=projects %}            
+
+            <div class="wrap-center">
+                <a href="{% url 'search' %}" class="btn">see more</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="wrap-type-2">
+        <section id="section-contact">
+            <h2>Get in touch</h2>
+            <form class="form-contact" method="POST" action="{% url 'contact:send_email' %}">
+                {% csrf_token %}
+                <label for="name">Name</label>
+                <input required type="text" name="name">
+                <label for="email">Email</label>
+                <input required type="text" name="email">
+                <label for="subject">Subject</label>
+                <input required type="text" name="subject">
+                <label for="message">Message</label>
+                <textarea required name="message"></textarea>
+                <button href="#" class="btn btn-submit">submit</button>
+            </form>
+        </section>
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="{% static 'js/index.js' %}"></script>
+    <script src="{% static 'js/load_theme.js' %}"></script>
+{% endblock scripts %}

@@ -24,6 +24,7 @@
     .list-item-project {
         margin: 0 0.7em;
         margin-bottom: 2.5em;
+        width: 30%;
     }
 
     .list-item-project:hover {

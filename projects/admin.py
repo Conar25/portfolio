@@ -1,3 +1,10 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import ProjectModel
+
+@admin.register(ProjectModel)
+class ProjectAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('title',)}
+
+    class Meta:
+        ordering: ['-created_date']
