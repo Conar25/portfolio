@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="toggle-buttons">
+        <a href="{% url 'index' %}"><i class="fas fa-home btn-toggle"></i></a>
+        <div class="language-toggle btn-toggle">ru</div>
+    </div>
+
+    {% block page_content %}
+    {% endblock page_content %}
+{% endblock content %}
+
+{% block scripts %}
+    <script src="{% static 'js/load_theme.js' %}"></script>
+{% endblock scripts %}

@@ -10,6 +10,8 @@
     --clr-primary: white;
     --clr-secondary: rgb(219, 219, 219);
 
+    --clr-link: rgb(169,169,169);
+
     --clr-shadow: black;
 
     --ff-primary: 'Ubuntu', sans-serif;
@@ -52,6 +54,7 @@ span,
 label,
 input,
 textarea,
+figcaption,
 button {
     color: var(--clr-text-secondary)
 }
@@ -86,7 +89,23 @@ a {
     color: var(--clr-text-primary);
 }
 
+figcaption {
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.unordered-list {
+    list-style: disc;
+    padding-left: 1em;
+}
+
+.link {
+    color: var(--clr-link);
+    text-decoration: underline;
+}
+
 .btn {
+    color: var(--clr-text-secondary);
     border-radius: 2em;
     box-shadow: var(--shadow);
     text-transform: capitalize;

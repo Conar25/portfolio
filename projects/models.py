@@ -17,14 +17,14 @@ class ProjectModel(models.Model):
     def get_image(self):
         valid_extensions = ['jpg', 'png', 'gif']
         for extension in valid_extensions:
-            path = os.path.join('img', 'projects' ,self.slug + '.' + extension)
+            path = os.path.join('img', 'projects', self.slug ,self.slug + '.' + extension)
             if finders.find(path):
                 return path
                 
-        return 'img/projects/default.png'
+        return os.path.join('img', 'projects', 'default.png')
 
     def get_template(self):
-        return os.path.join('projects', self.slug + '.html')
+        return os.path.join('projects', 'pages', self.slug + '.html')
     
     def __str__(self):
         return self.title

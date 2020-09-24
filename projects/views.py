@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.postgres.search import SearchVector, \
                                            SearchQuery, \
                                            SearchRank
@@ -21,3 +21,7 @@ def search_view(request):
     return render(request, 'projects/search.html', {
         'projects': projects,
         })
+
+def project_view(request, slug):
+    project = get_object_or_404(ProjectModel, slug=slug)
+    return render(request, project.get_template(), {'project': project})
