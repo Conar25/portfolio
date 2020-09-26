@@ -14,3 +14,5 @@ DATABASES = {
         'PORT': os.environ['POSTGRES_PORT'],
     }
 }
+
+INSTALLED_APPS.append('rosetta')

@@ -1,5 +1,7 @@
 {% extends 'core/base.html' %}
 {% load static %}
+{% load i18n %}
+{% load language_url %}
 
 {% block link %}
     <link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
@@ -13,24 +15,29 @@
     <div class="toggle-buttons">
         <div class="overlay"></div>
         <i class="fas fa-bars nav-toggle btn-toggle"></i>
-        <div class="language-toggle btn-toggle">ru</div>
+        {% get_current_language as LANGUAGE_CODE %}
+        {% if LANGUAGE_CODE == 'en' %}
+            <a href="{{ request.path|language_url:"ru" }}"class="language-toggle btn-toggle">ru</a>
+        {% else %}
+            <a href="{{ request.path|language_url:"en" }}"class="language-toggle btn-toggle">en</a>
+        {% endif %}
     </div>
     <nav class="nav-hide">
-        <a href="#section-photo" class="nav-element">Home</a>
-        <a href="#section-about" class="nav-element">About Me</a>
-        <a href="#section-projects" class="nav-element">Last projects</a>
-        <a href="#section-contact" class="nav-element">Get in touch</a>
+        <a href="{{ request.path|language_url:LANGUAGE_CODE}}#section-photo" class="nav-element">{% trans "Home" %}</a>
+        <a href="{{ request.path|language_url:LANGUAGE_CODE}}#section-about" class="nav-element">{% trans "About Me" %}</a>
+        <a href="{{ request.path|language_url:LANGUAGE_CODE}}#section-projects" class="nav-element">{% trans "Last projects" %}</a>
+        <a href="{{ request.path|language_url:LANGUAGE_CODE}}#section-contact" class="nav-element">{% trans "Get in touch" %}</a>
     </nav>
 
 
     <div class="wrap-type-1">
         <section id="section-photo">
-            <h1>Hi, I'm Ilshat_</h1>
+            <h1>{% trans "Hi, I'm Ilshat_" %}</h1>
             <figure class="figure-photo">
                 <img src="{% static 'img/dog.jpg' %}" alt="my image" class="photo">
             </figure>
             
-            <h3>Pick The theme</h3>
+            <h3>{% trans "Pick The theme" %}</h3>
             <div class="theme-controler">
                 <div data-theme="white" class="theme" id="white"></div>
                 <div data-theme="blue" class="theme" id="blue"></div>
@@ -43,9 +50,9 @@
     <div class="wrap-type-2">
         <section id="section-about">
             <div class="box box-about">
-                <h2>About me</h2>
-                <p>Possession her thoroughly remarkably terminated man continuing. Removed greater to do ability. You
-                    shy shall while but wrote marry. Call why sake has sing pure. Gay six set polite nature worthy.
+                <h2>{% trans "About me" %}</h2>
+                <p>
+                    {% trans "Possession her thoroughly remarkably terminated man continuing. Removed greater to do ability. Youshy shall while but wrote marry. Call why sake has sing pure. Gay six set polite nature worthy." %}
                 </p>
             </div>
         </section>
@@ -53,7 +60,7 @@
 
     <div class="wrap-type-1">
         <section id="section-projects">
-            <h2>Last projects</h2>
+            <h2>{% trans "Last projects" %}</h2>
 
             {% include 'projects/project_list.html' with projects=projects %}            
 
@@ -65,18 +72,18 @@
 
     <div class="wrap-type-2">
         <section id="section-contact">
-            <h2>Get in touch</h2>
+            <h2>{% trans "Get in touch" %}</h2>
             <form class="form-contact" method="POST" action="{% url 'contact:send_email' %}">
                 {% csrf_token %}
-                <label for="name">Name</label>
+                <label for="name">{% trans "Name" %}</label>
                 <input required type="text" name="name">
-                <label for="email">Email</label>
+                <label for="email"> {% trans "Email" %}</label>
                 <input required type="text" name="email">
-                <label for="subject">Subject</label>
+                <label for="subject">{% trans "Subject" %}</label>
                 <input required type="text" name="subject">
-                <label for="message">Message</label>
+                <label for="message">{% trans "Message" %}</label>
                 <textarea required name="message"></textarea>
-                <button href="#" class="btn btn-submit">submit</button>
+                <button href="#" class="btn btn-submit">{% trans "submit" %}</button>
             </form>
         </section>
     </div>

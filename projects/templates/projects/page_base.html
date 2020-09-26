@@ -1,10 +1,17 @@
 {% extends 'core/base.html' %}
 {% load static %}
+{% load i18n %}
+{% load language_url %}
 
 {% block content %}
     <div class="toggle-buttons">
         <a href="{% url 'index' %}"><i class="fas fa-home btn-toggle"></i></a>
-        <div class="language-toggle btn-toggle">ru</div>
+        {% get_current_language as LANGUAGE_CODE %}
+        {% if LANGUAGE_CODE == 'en' %}
+            <a href="{{ request.path|language_url:"ru" }}"class="language-toggle btn-toggle">ru</a>
+        {% else %}
+            <a href="{{ request.path|language_url:"en" }}"class="language-toggle btn-toggle">en</a>
+        {% endif %}
     </div>
 
     {% block page_content %}

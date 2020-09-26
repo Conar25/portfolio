@@ -1,27 +1,34 @@
 {% extends 'core/base.html' %}
 {% load static %}
+{% load language_url %}
+{% load i18n %}
 
 {% block link %}
     <link rel="stylesheet" href="{% static 'css/search.css' %}" type="text/css">
 {% endblock link %}
 
 {% block title %}
-    Search
+    {% trans "Search" %}
 {% endblock title %}
 
 {% block content %}
     <div class="toggle-buttons">
         <a href="{% url 'index' %}"><i class="fas fa-home btn-toggle"></i></a>
-        <div class="language-toggle btn-toggle">ru</div>
+        {% get_current_language as LANGUAGE_CODE %}
+        {% if LANGUAGE_CODE == 'en' %}
+            <a href="{{ request.path|language_url:"ru" }}"class="language-toggle btn-toggle">ru</a>
+        {% else %}
+            <a href="{{ request.path|language_url:"en" }}"class="language-toggle btn-toggle">en</a>
+        {% endif %}
     </div>
 
     <div class="wrap">
         <section>
-            <h1>My Projects</h1>
+            <h1>{% trans "My Projects" %}</h1>
         </section>
         <section class="section-search">
             <form class="form-search" method="get" action="{% url 'projects:search' %}">
-                <input type="text" name="query" placeholder="Search by tag or name...">
+                <input type="text" name="query" placeholder="{% trans "Search by tag or name..." %}">
                 <button type="submit" class="btn btn-search">search</button>
             </form>
         </section>
@@ -29,7 +36,7 @@
             {% if projects %}
                 {% include 'projects/project_list.html' with projects=projects %}            
             {% else %}
-                <h2>No results...</h2>
+                <h2>{% trans "No results..." %}</h2>
             {% endif %}
         </section>
     </div>

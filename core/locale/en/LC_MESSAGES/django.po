@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-26 13:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: core/templates/core/base.html:23
+msgid "Made by Ilshat G."
+msgstr ""
+
+#: core/templates/core/index.html:26
+msgid "Home"
+msgstr ""
+
+#: core/templates/core/index.html:27
+msgid "About Me"
+msgstr ""
+
+#: core/templates/core/index.html:28 core/templates/core/index.html:63
+msgid "Last projects"
+msgstr ""
+
+#: core/templates/core/index.html:29 core/templates/core/index.html:75
+msgid "Get in touch"
+msgstr ""
+
+#: core/templates/core/index.html:35
+msgid "Hi, I'm Ilshat_"
+msgstr ""
+
+#: core/templates/core/index.html:40
+msgid "Pick The theme"
+msgstr ""
+
+#: core/templates/core/index.html:53
+msgid "About me"
+msgstr ""
+
+#: core/templates/core/index.html:55
+msgid ""
+"Possession her thoroughly remarkably terminated man continuing. Removed "
+"greater to do ability. Youshy shall while but wrote marry. Call why sake has "
+"sing pure. Gay six set polite nature worthy."
+msgstr ""
+
+#: core/templates/core/index.html:78
+msgid "Name"
+msgstr ""
+
+#: core/templates/core/index.html:80
+msgid "Email"
+msgstr ""
+
+#: core/templates/core/index.html:82
+msgid "Subject"
+msgstr ""
+
+#: core/templates/core/index.html:84
+msgid "Message"
+msgstr ""
+
+#: core/templates/core/index.html:86
+msgid "submit"
+msgstr ""

@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-26 13:25+0000\n"
+"PO-Revision-Date: 2020-09-26 13:31+0000\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.4\n"
+
+#: projects/templates/projects/pages/path-finder.html:19
+msgid ""
+"\n"
+"                The goal of this project is to visualize basic pathfinding algorithms. It uses javascript with d3js. You can check the code on <a href='https://github.com/ilshat25/path-finder' class=\"link\">github</a> or visit the <a href='https://ilshat25.github.io/path-finder/' class=\"link\">site</a> and try it yourself (no support for mobile devices yet).\n"
+"            "
+msgstr ""
+"\n"
+"Цель этого проекта - визуализировать основные алгоритмы поиска пути с использованием javascript и библиотеки d3js. Вы можете посмотреть код на <a href='https://github.com/ilshat25/path-finder' class=\"link\">github</a> или опробовать вживую посетив <a href='https://ilshat25.github.io/path-finder/' class=\"link\">сайт</a> (пока нет поддержки для мобильных устройств)."
+
+#: projects/templates/projects/pages/path-finder.html:29
+msgid "Currently available algorithms:"
+msgstr "Доступные на данный момент алгоритмы:"
+
+#: projects/templates/projects/pages/path-finder.html:32
+#: projects/templates/projects/pages/path-finder.html:45
+msgid "BFS"
+msgstr "BFS"
+
+#: projects/templates/projects/pages/path-finder.html:33
+msgid "Greedy BFS (manhattan and euclidean heuristics)"
+msgstr "Жадный BFS (манхэттенская и евклидова эвристики)"
+
+#: projects/templates/projects/pages/path-finder.html:34
+msgid "A* (manhattan and euclidean heuristics)"
+msgstr "A* (манхэттенская и евклидова эвристики)"
+
+#: projects/templates/projects/pages/path-finder.html:51
+msgid "Greedy BFS manhattan heuristic"
+msgstr "Жадный BFS манхэттенская эвристика"
+
+#: projects/templates/projects/pages/path-finder.html:57
+msgid "Greedy BFS euclidean heuristic"
+msgstr "Жадный BFS евклидова эвристика"
+
+#: projects/templates/projects/pages/path-finder.html:63
+msgid "A* manhattan heuristic"
+msgstr "A* манхэттенская эвристика"
+
+#: projects/templates/projects/pages/path-finder.html:69
+msgid "A* euclidean heuristic"
+msgstr "A* евклидова эвристика"
+
+#: projects/templates/projects/search.html:11
+msgid "Search"
+msgstr "Поиск"
+
+#: projects/templates/projects/search.html:27
+msgid "My Projects"
+msgstr "Мои проекты"
+
+#: projects/templates/projects/search.html:31
+msgid "Search by tag or name..."
+msgstr "Искать по тэгу или названию..."
+
+#: projects/templates/projects/search.html:39
+msgid "No results..."
+msgstr "Ничего не найдено..."

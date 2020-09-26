@@ -1,5 +1,6 @@
 {% extends 'projects/page_base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block link %}
 <link rel="stylesheet" href="{% static 'css/projects/path-finder.css' %}" type="text/css">
@@ -14,19 +15,23 @@
     <section id="section-about">
             <h1>{{ project.title }}</h1>
             <img src="{% static 'img/projects/path-finder/main.gif' %}" alt="main" class="box project-img">
-            <p id="project-paragraph">The goal of this project is to visualize basic pathfinding algorithms. It uses javascript with d3js. You can check the code on <a href="https://github.com/Conar25/path-finder" class="link">github</a> or visit the <a href="https://conar25.github.io/path-finder/" class="link">site</a> and try it yourself (no support for mobile devices yet).</p>
+            <p id="project-paragraph">
+            {% blocktranslate %}
+                The goal of this project is to visualize basic pathfinding algorithms. It uses javascript with d3js. You can check the code on <a href='https://github.com/ilshat25/path-finder' class="link">github</a> or visit the <a href='https://ilshat25.github.io/path-finder/' class="link">site</a> and try it yourself (no support for mobile devices yet).
+            {% endblocktranslate %}
+            </p>
     </section>
 </div>
 
 <div class="wrap-type-2">
     <section id="section-description">
         <p id="project-paragraph">
-             Currently available algorithms:
+            {% trans "Currently available algorithms:" %}
         </p>
         <ul class="unordered-list">
-            <li><a href="https://en.wikipedia.org/wiki/Breadth-first_search">BFS</a></li>
-            <li><a href="http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html#algorithms">Greedy BFS (manhattan and euclidean heuristics)</a></li>
-            <li><a href="http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html#algorithms">A* (manhattan and euclidean heuristics)</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Breadth-first_search">{% trans "BFS" %}</a></li>
+            <li><a href="http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html#algorithms">{% trans "Greedy BFS (manhattan and euclidean heuristics)" %}</a></li>
+            <li><a href="http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html#algorithms">{% trans "A* (manhattan and euclidean heuristics)" %}</a></li>
         </ul>
     </section>
 </div>
@@ -37,31 +42,31 @@
             <li class="list-image">
                 <figure>
                     <img src="{% static 'img/projects/path-finder/BFS.gif' %}" alt="BFS" class="box project-img">
-                    <figcaption>BFS</figcaption>
+                    <figcaption>{% trans "BFS" %}</figcaption>
                 </figure>
             </li>
             <li class="list-image">
                 <figure>
                     <img src="{% static 'img/projects/path-finder/Greedy-BFS-manhattan.gif' %}" alt="Greedy-BFS-manhattan" class="box project-img">
-                    <figcaption>Greedy BFS manhattan heuristic</figcaption>
+                    <figcaption>{% trans "Greedy BFS manhattan heuristic" %}</figcaption>
                 </figure>
             </li>
             <li class="list-image">
                 <figure>
                     <img src="{% static 'img/projects/path-finder/Greedy-BFS-euclidean.gif' %}" alt="Greedy-BFS-euclidean" class="box project-img">
-                    <figcaption>Greedy BFS euclidean heuristic</figcaption>
+                    <figcaption>{% trans "Greedy BFS euclidean heuristic" %}</figcaption>
                 </figure>
             </li>
             <li class="list-image">
                 <figure>
                     <img src="{% static 'img/projects/path-finder/A*-manhattan.gif' %}" alt="A*-manhattan" class="box project-img">
-                    <figcaption>A* manhattan heuristic</figcaption>
+                    <figcaption>{% trans "A* manhattan heuristic" %}</figcaption>
                 </figure>
             </li>
             <li class="list-image">
                 <figure>
                     <img src="{% static 'img/projects/path-finder/A*-euclidean.gif' %}" alt="A*-euclidean" class="box project-img">
-                    <figcaption>A* euclidean heuristic</figcaption>
+                    <figcaption>{% trans "A* euclidean heuristic" %}</figcaption>
                 </figure>
             </li>
         </ul>
