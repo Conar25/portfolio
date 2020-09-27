@@ -3,6 +3,17 @@
 {% load i18n %}
 {% load language_url %}
 
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/projects/page-base.css' %}" type="text/css">    
+
+    {% block page_link %}
+    {% endblock page_link %}
+{% endblock link %}
+
+{% block title %}
+    {{ project.title }}
+{% endblock title %}
+
 {% block content %}
     <div class="toggle-buttons">
         <a href="{% url 'index' %}"><i class="fas fa-home btn-toggle"></i></a>

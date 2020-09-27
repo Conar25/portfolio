@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-26 13:25+0000\n"
+"POT-Creation-Date: 2020-09-27 09:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: projects/templates/projects/pages/path-finder.html:19
+#: projects/templates/projects/pages/path-finder.html:15
 msgid ""
 "\n"
 "                The goal of this project is to visualize basic pathfinding "
@@ -29,37 +29,73 @@ msgid ""
 "            "
 msgstr ""
 
-#: projects/templates/projects/pages/path-finder.html:29
+#: projects/templates/projects/pages/path-finder.html:25
 msgid "Currently available algorithms:"
 msgstr ""
 
-#: projects/templates/projects/pages/path-finder.html:32
-#: projects/templates/projects/pages/path-finder.html:45
+#: projects/templates/projects/pages/path-finder.html:28
+#: projects/templates/projects/pages/path-finder.html:41
 msgid "BFS"
 msgstr ""
 
-#: projects/templates/projects/pages/path-finder.html:33
+#: projects/templates/projects/pages/path-finder.html:29
 msgid "Greedy BFS (manhattan and euclidean heuristics)"
 msgstr ""
 
-#: projects/templates/projects/pages/path-finder.html:34
+#: projects/templates/projects/pages/path-finder.html:30
 msgid "A* (manhattan and euclidean heuristics)"
 msgstr ""
 
-#: projects/templates/projects/pages/path-finder.html:51
+#: projects/templates/projects/pages/path-finder.html:47
 msgid "Greedy BFS manhattan heuristic"
 msgstr ""
 
-#: projects/templates/projects/pages/path-finder.html:57
+#: projects/templates/projects/pages/path-finder.html:53
 msgid "Greedy BFS euclidean heuristic"
 msgstr ""
 
-#: projects/templates/projects/pages/path-finder.html:63
+#: projects/templates/projects/pages/path-finder.html:59
 msgid "A* manhattan heuristic"
 msgstr ""
 
-#: projects/templates/projects/pages/path-finder.html:69
+#: projects/templates/projects/pages/path-finder.html:65
 msgid "A* euclidean heuristic"
+msgstr ""
+
+#: projects/templates/projects/pages/to-do-list.html:12
+msgid ""
+"\n"
+"                    This app allows you to maintain your to-do list. All you "
+"need is to authenticate using your social account (google and vk available). "
+"You can check the code on <a href='https://github.com/ilshat25/to-do-list' "
+"class=\"link\">github</a> or visit the <a href='https://ilshat-to-do."
+"herokuapp.com/items/' class=\"link\">site</a> and try it yourself.\n"
+"                "
+msgstr ""
+
+#: projects/templates/projects/pages/to-do-list.html:21
+msgid "Change account"
+msgstr ""
+
+#: projects/templates/projects/pages/to-do-list.html:25
+msgid ""
+"\n"
+"                    Your to-do list is related to social account you "
+"authenticate with. To change account just click on \"Change account\" linked "
+"on the bottom.        \n"
+"                "
+msgstr ""
+
+#: projects/templates/projects/pages/to-do-list.html:34
+msgid "Rearrange to-do items"
+msgstr ""
+
+#: projects/templates/projects/pages/to-do-list.html:38
+msgid ""
+"\n"
+"                    You can rearrange to-do items by grabbing and moving "
+"them.        \n"
+"                "
 msgstr ""
 
 #: projects/templates/projects/search.html:11

@@ -2,20 +2,16 @@
 {% load static %}
 {% load i18n %}
 
-{% block link %}
+{% block page_link %}
 <link rel="stylesheet" href="{% static 'css/projects/path-finder.css' %}" type="text/css">
-{% endblock link %}
-
-{% block title %}
-    {{ project.title }}
-{% endblock title %}
+{% endblock page_link %}
 
 {% block page_content %}
 <div class="wrap-type-1">
     <section id="section-about">
             <h1>{{ project.title }}</h1>
             <img src="{% static 'img/projects/path-finder/main.gif' %}" alt="main" class="box project-img">
-            <p id="project-paragraph">
+            <p class="p-project">
             {% blocktranslate %}
                 The goal of this project is to visualize basic pathfinding algorithms. It uses javascript with d3js. You can check the code on <a href='https://github.com/ilshat25/path-finder' class="link">github</a> or visit the <a href='https://ilshat25.github.io/path-finder/' class="link">site</a> and try it yourself (no support for mobile devices yet).
             {% endblocktranslate %}
@@ -25,7 +21,7 @@
 
 <div class="wrap-type-2">
     <section id="section-description">
-        <p id="project-paragraph">
+        <p class="p-project">
             {% trans "Currently available algorithms:" %}
         </p>
         <ul class="unordered-list">

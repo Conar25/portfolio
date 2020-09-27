@@ -68,11 +68,12 @@ h3 {
 }
 
 h1 {
+    font-size: 2em;
     margin: 1em;
 }
 
 h2 {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 h3 {

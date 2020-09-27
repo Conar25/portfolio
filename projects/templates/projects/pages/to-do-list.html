@@ -1,0 +1,44 @@
+{% extends 'projects/page_base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block page_content %}
+    <div class="wrap-type-1">
+        <section id="section-about">
+                <h1>{{ project.title }}</h1>
+                <img src="{% static 'img/projects/to-do-list/to-do-list.gif' %}" alt="main" class="box project-img">
+
+                <p class="p-project">
+                {% blocktrans %}
+                    This app allows you to maintain your to-do list. All you need is to authenticate using your social account (google and vk available). You can check the code on <a href='https://github.com/ilshat25/to-do-list' class="link">github</a> or visit the <a href='https://ilshat-to-do.herokuapp.com/items/' class="link">site</a> and try it yourself.
+                {% endblocktrans %}
+                </p>
+        </section>
+    </div>
+
+    <div class="wrap-type-2">
+        <section id="section-social">
+            <h2>{% trans "Change account" %}</h2>
+            <img src="{% static 'img/projects/to-do-list/social.gif' %}" alt="social" class="box project-img">
+            <br>
+            <p class="p-project">
+                {% blocktrans %}
+                    Your to-do list is related to social account you authenticate with. To change account just click on "Change account" linked on the bottom.        
+                {% endblocktrans %}
+            </p>
+        </section>
+    </div>
+
+    <div class="wrap-type-1">
+        <section id="section-rearrange">
+            <h2>{% trans "Rearrange to-do items" %}</h2>
+            <img src="{% static 'img/projects/to-do-list/grab.gif' %}" alt="grab" class="box project-img">
+            <br>
+            <p class="p-project">
+                {% blocktrans %}
+                    You can rearrange to-do items by grabbing and moving them.        
+                {% endblocktrans %}
+            </p>
+        </section>
+    </div>
+{% endblock page_content %}
