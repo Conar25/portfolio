@@ -4,9 +4,27 @@
   "pk": 1,
   "fields": {
     "title": "Path Finder",
+    "title_en": "Path Finder",
+    "title_ru": "Поиск пути",
     "slug": "path-finder",
-    "description": "Path finding visualisation using javascript",
+    "description": "Path finding visualisation using javascript with d3js.",
+    "description_en": "Path finding visualisation using javascript with d3js.",
+    "description_ru": "Визуализация поиска пути с использованием javascript и d3js.",
     "created_date": "2020-09-23T06:47:36.909Z"
+  }
+},
+{
+  "model": "projects.projectmodel",
+  "pk": 2,
+  "fields": {
+    "title": "To-do list",
+    "title_en": "To-do list",
+    "title_ru": "Список дел",
+    "slug": "to-do-list",
+    "description": "To-do list realisation using Django.",
+    "description_en": "To-do list realisation using Django.",
+    "description_ru": "Реализация списка дел с помощью Django.",
+    "created_date": "2020-09-27T06:53:04.046Z"
   }
 }
 ]
