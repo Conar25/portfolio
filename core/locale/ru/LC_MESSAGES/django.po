@@ -8,17 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-27 09:58+0000\n"
-"PO-Revision-Date: 2020-09-26 13:25+0000\n"
+"POT-Creation-Date: 2020-09-27 11:44+0000\n"
+"PO-Revision-Date: 2020-09-27 11:44+0000\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
-"%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Translated-Using: django-rosetta 0.9.4\n"
 
 #: core/templates/core/base.html:23
@@ -33,11 +31,11 @@ msgstr "Начало"
 msgid "About Me"
 msgstr "Обо мне"
 
-#: core/templates/core/index.html:28 core/templates/core/index.html:63
+#: core/templates/core/index.html:28 core/templates/core/index.html:71
 msgid "Last projects"
 msgstr "Последние проекты"
 
-#: core/templates/core/index.html:29 core/templates/core/index.html:75
+#: core/templates/core/index.html:29 core/templates/core/index.html:83
 msgid "Get in touch"
 msgstr "Связаться со мной"
 
@@ -55,27 +53,29 @@ msgstr "Обо мне"
 
 #: core/templates/core/index.html:55
 msgid ""
-"Possession her thoroughly remarkably terminated man continuing. Removed "
-"greater to do ability. Youshy shall while but wrote marry. Call why sake has "
-"sing pure. Gay six set polite nature worthy."
+"\n"
+"                        I am a 2nd year student living in Moscow. I am fond of programming and want to devote my life to this.             \n"
+"                    "
 msgstr ""
+"\n"
+"Я студент 2 курса, живу в Москве. Увлекаюсь программированием и хочу посвятить этому свою жизнь."
 
-#: core/templates/core/index.html:78
+#: core/templates/core/index.html:86
 msgid "Name"
 msgstr "Имя"
 
-#: core/templates/core/index.html:80
+#: core/templates/core/index.html:88
 msgid "Email"
 msgstr "Электронная почта"
 
-#: core/templates/core/index.html:82
+#: core/templates/core/index.html:90
 msgid "Subject"
 msgstr "Тема письма"
 
-#: core/templates/core/index.html:84
+#: core/templates/core/index.html:92
 msgid "Message"
 msgstr "Сообщение"
 
-#: core/templates/core/index.html:86
+#: core/templates/core/index.html:94
 msgid "submit"
 msgstr "отправить"

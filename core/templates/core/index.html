@@ -34,7 +34,7 @@
         <section id="section-photo">
             <h1>{% trans "Hi, I'm Ilshat_" %}</h1>
             <figure class="figure-photo">
-                <img src="{% static 'img/dog.jpg' %}" alt="my image" class="photo">
+                <img src="{% static 'img/self.jpg' %}" alt="my image" class="photo">
             </figure>
             
             <h3>{% trans "Pick The theme" %}</h3>
@@ -52,8 +52,16 @@
             <div class="box box-about">
                 <h2>{% trans "About me" %}</h2>
                 <p>
-                    {% trans "Possession her thoroughly remarkably terminated man continuing. Removed greater to do ability. Youshy shall while but wrote marry. Call why sake has sing pure. Gay six set polite nature worthy." %}
+                    {% blocktrans %}
+                        I am a 2nd year student living in Moscow. I am fond of programming and want to devote my life to this.             
+                    {% endblocktrans %}
                 </p>
+
+                <ul class="unordered-list">
+                    <li><a href="https://github.com/ilshat25" class="link">github</a></li>
+                    <li><a href="https://codeforces.com/profile/Conar" class="link">codeforces</a></li>
+                    <li><a href="tg://resolve?domain=ilshat2512" class="link">telegram</a></li>
+                </ul>
             </div>
         </section>
     </div>
