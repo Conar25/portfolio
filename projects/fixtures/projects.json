@@ -26,5 +26,19 @@
     "description_ru": "Реализация списка дел с помощью Django.",
     "created_date": "2020-09-27T06:53:04.046Z"
   }
+},
+{
+  "model": "projects.projectmodel",
+  "pk": 3,
+  "fields": {
+    "title": "Terminal game",
+    "title_en": "Terminal game",
+    "title_ru": "Игра в терминале",
+    "slug": "terminal-game",
+    "description": "Simple game written in C++11 using ncurses library.",
+    "description_en": "Simple game written in C++11 using ncurses library.",
+    "description_ru": "Простая игра, написанная на C++ 11 используя библиотеку ncurses",
+    "created_date": "2020-10-13T19:33:49.837Z"
+  }
 }
 ]

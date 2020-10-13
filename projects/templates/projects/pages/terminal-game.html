@@ -1,0 +1,18 @@
+{% extends 'projects/page_base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block page_content %}
+    <div class="wrap-type-1">
+        <section id="section-about">
+                <h1>{{ project.title }}</h1>
+                <img src="{% static 'img/projects/terminal-game/terminal-game.gif' %}" alt="main" class="box project-img">
+
+                <p class="p-project">
+                {% blocktrans %}
+                    Little terminal game written in C++ 11 using ncurses library. You can check the code on <a href='https://github.com/ilshat25/to-do-list' class="link">github</a>.
+                {% endblocktrans %}
+                </p>
+        </section>
+    </div>
+{% endblock page_content %}

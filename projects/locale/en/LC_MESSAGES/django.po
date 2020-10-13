@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-27 11:44+0000\n"
+"POT-Creation-Date: 2020-10-13 19:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,6 +60,15 @@ msgstr ""
 
 #: projects/templates/projects/pages/path-finder.html:65
 msgid "A* euclidean heuristic"
+msgstr ""
+
+#: projects/templates/projects/pages/terminal-game.html:12
+msgid ""
+"\n"
+"                    Little terminal game written in C++ 11 using ncurses "
+"library. You can check the code on <a href='https://github.com/ilshat25/to-"
+"do-list' class=\"link\">github</a>.\n"
+"                "
 msgstr ""
 
 #: projects/templates/projects/pages/to-do-list.html:12

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-27 11:44+0000\n"
-"PO-Revision-Date: 2020-09-27 12:25+0000\n"
+"POT-Creation-Date: 2020-10-13 19:42+0000\n"
+"PO-Revision-Date: 2020-10-13 19:46+0000\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -60,6 +60,15 @@ msgstr "A* манхэттенская эвристика"
 #: projects/templates/projects/pages/path-finder.html:65
 msgid "A* euclidean heuristic"
 msgstr "A* евклидова эвристика"
+
+#: projects/templates/projects/pages/terminal-game.html:12
+msgid ""
+"\n"
+"                    Little terminal game written in C++ 11 using ncurses library. You can check the code on <a href='https://github.com/ilshat25/to-do-list' class=\"link\">github</a>.\n"
+"                "
+msgstr ""
+"\n"
+"Небольшая игра для терминала, написанная на C++ 11 с использованием библиотеки ncurses. Вы можете взлянуть на код на <a href='https://github.com/ilshat25/to-do-list' class=\"link\">github</a>."
 
 #: projects/templates/projects/pages/to-do-list.html:12
 msgid ""

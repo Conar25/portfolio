@@ -48,6 +48,30 @@
   }
 },
 {
+  "model": "taggit.tag",
+  "pk": 7,
+  "fields": {
+    "name": "ncurses",
+    "slug": "ncurses"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 8,
+  "fields": {
+    "name": "C++",
+    "slug": "c"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 9,
+  "fields": {
+    "name": "terminal",
+    "slug": "terminal"
+  }
+},
+{
   "model": "taggit.taggeditem",
   "pk": 1,
   "fields": {
@@ -108,6 +132,33 @@
     "tag": 6,
     "content_type": 9,
     "object_id": 2
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 8,
+  "fields": {
+    "tag": 8,
+    "content_type": 9,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 9,
+  "fields": {
+    "tag": 9,
+    "content_type": 9,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 10,
+  "fields": {
+    "tag": 7,
+    "content_type": 9,
+    "object_id": 3
   }
 }
 ]
